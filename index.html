@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Beauty Salon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat:wght@600;800&family=Satisfy&family=Stoke:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgb(186, 214, 214);
+        }
+
+        .navi {
+            background-color: azure;
+            overflow: hidden;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .navi a {
+            float: left;
+            color:  rgb(16, 67, 86);
+            text-align: center;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        .navi a:hover {
+            background-color:  rgb(16, 67, 86);
+            color: azure;
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                background-color: azure;
+            }
+            
+            .navi {
+                background-color: rgb(16, 67, 86);
+            }
+            
+            .navi a {
+                float: none;
+                width: 100%;
+                text-align: center;
+                padding: 5px;
+                display: block;
+                color: azure;
+            }
+            
+            .navi a:hover {
+                background-color: azure;
+                color: rgb(16, 67, 86);
+            }
+        }
+
+        .panel {
+            width: 100%;
+            height: 50%;
+            animation-name: example;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            padding: 200px;
+            border-radius: 50px;
+        }
+
+        .panel a {
+            float: left;
+            text-decoration: none;
+            background-color: rgb(16, 67, 86);
+            color: azure;
+            padding: 15px;
+            border-radius: 15px;
+            display: contents;
+        }
+
+        .panel a:hover {
+            background-color: azure;
+            color: rgb(16, 67, 86);
+            border-radius: 70px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .panel {
+                padding: 150px;
+            }
+        }
+
+        @keyframes example {
+            0%   {background-image: url("https://www.simplybusiness.co.uk/static/d2ec218a6cc2c37dc6ee961f9eab87d7/b6518/guide-to-opening-a-salon.jpg")}
+            25%  {background-image: url("https://m.media-amazon.com/images/I/71POqHTHB7L._AC_UF1000,1000_QL80_.jpg");}
+             50%  {background-image: url("https://myudaipurcity.com/wp-content/uploads/2019/01/Beauty-Parlors-in-Udaipur.jpg");}
+            100% {background-image: url("https://salonsparen.com/wp-content/uploads/2021/02/beauty3-1.jpg");}
+        }
+        
+        .icons a {
+            background-color: azure;
+            color: rgb(16, 67, 86);
+            padding: 5px;
+        }
+
+        .icons a:hover {
+            background-color: rgb(16, 67, 86);
+            color: azure;
+            border-radius: 25px;
+        }
+
+        .about-section {
+            padding: 100px;
+            text-align: center;
+        }
+
+        .about-section h1, .about-section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color:  rgb(16, 67, 86);
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color:  rgb(16, 67, 86);
+        }
+
+        .footer {
+            background-color: azure;
+            padding: 20px;
+            text-align: center;
+            color:  rgb(16, 67, 86);
+        }
+
+        .footer p {
+            margin: 0;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navi">
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="services.html">SERVICES</a>
+            <a href="staff.html">STAFF</a>
+            <a href="contactus.html">CONTACT US</a>
+        </nav>
+    </div>
+    <div class="panel">
+        <center>
+            <br>
+            <h2>
+            <a href="#">BRIDAL</a>
+            </h2>
+            <h2>
+            <a href="#">HAIR</a>
+            </h2>
+            <h2>
+            <a href="#">WAX</a>
+            </h2>
+        </center>
+        
+    </div>
+    <div class="about-section">
+        <h1 style="font-family: 'Lobster', cursive; font-size: 50px; color: rgb(16, 67, 86);">
+            KRISHNA BEAUTY SALON
+        </h1>
+        <hr>
+        <h2>About Us</h2>
+        <p>Welcome to Krishna Beauty Salon, where beauty meets excellence. We are a team of highly skilled professionals dedicated to providing you with top-notch beauty and wellness services. With our wide range of services and personalized approach, we strive to enhance your natural beauty and leave you feeling rejuvenated.</p>
+        <p>At Krishna Beauty Salon, we believe in using the finest products and the latest techniques to deliver exceptional results. Whether you're looking for a haircut, a relaxing facial, a manicure, or any other beauty service, our experienced staff will ensure that you receive the highest level of care and attention.</p>
+        <p>Visit us today and indulge in a truly pampering experience. Discover a world of beauty and wellness at Krishna Beauty Salon.</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 <a href="home.html" style="text-decoration: none; color: rgb(16, 67, 86);">Krishna Beauty Salon</a>. All rights reserved. | Designed by JatinMiglani</p>
+        <hr>
+        <br>
+        <div class="icons">
+        <center><a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a></center>
+        
+    </div>
+    </div>
+</body>
+</html>
