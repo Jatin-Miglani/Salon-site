@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat:wght@600;800&family=Satisfy&family=Stoke:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <style>
         * {
             box-sizing: border-box;
@@ -76,31 +77,29 @@
             padding: 200px;
             border-radius: 50px;
         }
-
-        .panel a {
-            float: left;
-            text-decoration: none;
-            background-color: rgb(16, 67, 86);
-            color: azure;
-            padding: 15px;
-            border-radius: 15px;
-            display: contents;
-        }
-
-        .panel a:hover {
-            background-color: azure;
+        
+        .panel h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 50px;
             color: rgb(16, 67, 86);
-            border-radius: 70px;
+            background-color: rgb(186, 214, 214,0.3);
+            border-radius: 100px;
         }
-
+        .panel h1:hover{
+            color:rgb(242, 242, 29) ;
+        }
         @media only screen and (max-width: 768px) {
             .panel {
                 padding: 150px;
             }
+            
+            .panel h1 {
+                font-size: 30px;
+            }
         }
 
         @keyframes example {
-            0%   {background-image: url("https://www.simplybusiness.co.uk/static/d2ec218a6cc2c37dc6ee961f9eab87d7/b6518/guide-to-opening-a-salon.jpg")}
+            0%   {background-image: url("https://www.simplybusiness.co.uk/static/d2ec218a6cc2c37dc6ee961f9eab87d7/b6518/guide-to-opening-a-salon.jpg")} 
             25%  {background-image: url("https://m.media-amazon.com/images/I/71POqHTHB7L._AC_UF1000,1000_QL80_.jpg");}
              50%  {background-image: url("https://myudaipurcity.com/wp-content/uploads/2019/01/Beauty-Parlors-in-Udaipur.jpg");}
             100% {background-image: url("https://salonsparen.com/wp-content/uploads/2021/02/beauty3-1.jpg");}
@@ -118,12 +117,43 @@
             border-radius: 25px;
         }
 
+        .toggle a:hover{
+            background-color: azure;
+            color: rgb(16, 67, 86);
+        }
+
+        .nav2{
+            float: right;
+            background-color: rgb(16, 67, 86);
+            margin: 10px;
+            right: 0;
+            position: fixed;
+            width: 3%;
+            height: 50px;
+            text-align: center;
+            padding: 10px 15px;
+            color: azure;
+            text-decoration: none;
+            font-size: 20px;
+            bottom: 2px; 
+            border-radius: 70px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .nav2 {
+                width: 100%;
+                margin: 0;
+                bottom: 0;
+                border-radius: 0;
+            }
+        }
+
         .about-section {
             padding: 100px;
             text-align: center;
         }
 
-        .about-section h1, .about-section h2 {
+        .about-section h2 {
             font-size: 32px;
             margin-bottom: 30px;
             color:  rgb(16, 67, 86);
@@ -146,12 +176,17 @@
             margin: 0;
             padding: 10px 0;
         }
+        @media only screen and (max-width: 768px){
+            .footer{
+                padding-bottom: 70px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="navi">
         <nav>
-            <a href="home.html">HOME</a>
+            <a href="index.html">HOME</a>
             <a href="services.html">SERVICES</a>
             <a href="staff.html">STAFF</a>
             <a href="contactus.html">CONTACT US</a>
@@ -160,22 +195,17 @@
     <div class="panel">
         <center>
             <br>
-            <h2>
-            <a href="#">BRIDAL</a>
-            </h2>
-            <h2>
-            <a href="#">HAIR</a>
-            </h2>
-            <h2>
-            <a href="#">WAX</a>
-            </h2>
+            <h1>
+                KRISHNA BEAUTY SALON
+            </h1>
+            
         </center>
         
     </div>
+    <div class="toggle">
+        <a href="tel:+917986544257" class="nav2"><i class="fa fa-phone"></i></a>    
+    </div>
     <div class="about-section">
-        <h1 style="font-family: 'Lobster', cursive; font-size: 50px; color: rgb(16, 67, 86);">
-            KRISHNA BEAUTY SALON
-        </h1>
         <hr>
         <h2>About Us</h2>
         <p>Welcome to Krishna Beauty Salon, where beauty meets excellence. We are a team of highly skilled professionals dedicated to providing you with top-notch beauty and wellness services. With our wide range of services and personalized approach, we strive to enhance your natural beauty and leave you feeling rejuvenated.</p>
@@ -184,7 +214,7 @@
     </div>
 
     <div class="footer">
-        <p>&copy; 2023 <a href="home.html" style="text-decoration: none; color: rgb(16, 67, 86);">Krishna Beauty Salon</a>. All rights reserved. | Designed by JatinMiglani</p>
+        <p>&copy; 2023 <a href="home.html" style="text-decoration: none; color: rgb(16, 67, 86);">Krishna Beauty Salon</a>. All rights reserved. | Designed by <a href="https://jatin-miglani.github.io/Jatin-Portfolio/" style="text-decoration: none; color: rgb(16, 67, 86);">JatinMiglani</a></p>
         <hr>
         <br>
         <div class="icons">

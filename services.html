@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat:wght@600;800&family=Stoke:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <style>
         * {
             box-sizing: border-box;
@@ -192,6 +193,35 @@
             background-color: rgb(16, 67, 86);
             border-radius: 25px;
         }
+        .toggle a:hover{
+            background-color: azure;
+            color: rgb(16, 67, 86);
+        }
+        .nav2{
+            float: right;
+            background-color: rgb(16, 67, 86);
+            margin: 10px;
+            right: 0;
+            position: fixed;
+            width: 3%;
+            height: 50px;
+            text-align: center;
+            padding: 10px 15px;
+            color: azure;
+            text-decoration: none;
+            font-size: 20px;
+            bottom: 2px; 
+            border-radius: 70px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .nav2 {
+                width: 100%;
+                margin: 0;
+                bottom: 0;
+                border-radius: 0;
+            }
+        }
 
         @media (max-width: 768px) {
             .about-section {
@@ -229,6 +259,10 @@
                 color: azure;
             }
 
+            .footer{
+                padding-bottom: 70px;
+            }
+
         }
     </style>
 </head>
@@ -241,38 +275,42 @@
             <a href="contactus.html">CONTACT US</a>
         </nav>
     </div>
+    <div class="toggle">
+        <a href="tel:+917986544257" class="nav2"><i class="fa fa-phone"></i></a>    
+    </div>
     <div class="about-section">
         <h2>SERVICES</h2>
         <div class="card-container">
             <div class="card">
-                <div class="card-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLtgIwKIZVvCdhYJ0Oat2E08OA6000B42_xQaVr6q7IJ2Ey3BxX1hOafHuNUw2wddGDE&usqp=CAU')"></div>
+                <div class="card-image" style="background-image: url('https://www.khoobsurat.in/uploaded-files/product-images/Bridal-Makeup4920.jpg')"></div>
                 <div class="card-content">
-                    <h2 class="card-title">Card Title 1</h2>
-                    <p class="card-description">This is a sample card description. You can customize it as per your needs.</p>
+                    <h2 class="card-title">BRIDAL MAKEOVER</h2>
+                    <p class="card-description">"We specialize in Bridal Makeover services, creating stunning looks that enhance your natural beauty on your special day."
+                    </p>
                     <a href="#" class="card-button">Read More</a>
                 </div>
             </div>
             <div class="card">
-                <div class="card-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLtgIwKIZVvCdhYJ0Oat2E08OA6000B42_xQaVr6q7IJ2Ey3BxX1hOafHuNUw2wddGDE&usqp=CAU')"></div>
+                <div class="card-image" style="background-image: url('https://img.freepik.com/free-photo/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon_176420-4455.jpg')"></div>
                 <div class="card-content">
-                    <h2 class="card-title">Card Title 2</h2>
-                    <p class="card-description">This is a sample card description. You can customize it as per your needs.</p>
+                    <h2 class="card-title">HAIR STYLING</h2>
+                    <p class="card-description">"At our salon, we offer expert Hair Styling services to help you achieve the perfect look, whether it's for a special occasion or a fresh new style."</p>
                     <a href="#" class="card-button">Read More</a>
                 </div>
             </div>
             <div class="card">
-                <div class="card-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLtgIwKIZVvCdhYJ0Oat2E08OA6000B42_xQaVr6q7IJ2Ey3BxX1hOafHuNUw2wddGDE&usqp=CAU')"></div>
+                <div class="card-image" style="background-image: url('https://assets.vogue.in/photos/5f6c7a4c10dbc0617e889b18/2:3/w_2560%2Cc_limit/Shraddha%2520Kapoor%2520in%2520Falguni%2520Shane%2520Peacock%2520lehenga%2520from%2520India%2520Couture%2520Week%25202020.jpg')"></div>
                 <div class="card-content">
-                    <h2 class="card-title">Card Title 2</h2>
-                    <p class="card-description">This is a sample card description. You can customize it as per your needs.</p>
+                    <h2 class="card-title">BRIDAL LEHENGAS</h2>
+                    <p class="card-description">"Discover the epitome of elegance and grace with our exquisite collection of Bridal Lehengas, meticulously crafted to make your special day truly unforgettable."</p>
                     <a href="#" class="card-button">Read More</a>
                 </div>
             </div>
             <div class="card">
-                <div class="card-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLtgIwKIZVvCdhYJ0Oat2E08OA6000B42_xQaVr6q7IJ2Ey3BxX1hOafHuNUw2wddGDE&usqp=CAU')"></div>
+                <div class="card-image" style="background-image: url('https://www.bespokebeautybyrh.com/shared/images/content/bus_54065/blog/body_wax.jpg')"></div>
                 <div class="card-content">
-                    <h2 class="card-title">Card Title 2</h2>
-                    <p class="card-description">This is a sample card description. You can customize it as per your needs.</p>
+                    <h2 class="card-title">FULL BODY WAX</h2>
+                    <p class="card-description">"Experience the silky smoothness and impeccable grooming with our Full Body Waxing services, providing a comprehensive solution for hair removal and a flawless, touchable skin."</p>
                     <a href="#" class="card-button">Read More</a>
                 </div>
             </div>
@@ -282,10 +320,10 @@
     <div class="vacancy-section">
         <h2>Vacancies</h2>
         <p>We are currently hiring new female staff who are proficient in salon work. If you are passionate about the beauty industry and would like to join our team, please fill out the form below.</p>
-        <a href="vacancy_form.html" class="vacancy-button">Apply Now</a>
+        <a href="Vacancy.html" class="vacancy-button">Apply Now</a>
     </div>
     <div class="footer">
-        <p>&copy; 2023 <a href="home.html" style="text-decoration: none; color: rgb(16, 67, 86);">Krishna Beauty Salon</a>. All rights reserved. | Designed by JatinMiglani</p>
+        <p>&copy; 2023 <a href="home.html" style="text-decoration: none; color: rgb(16, 67, 86);">Krishna Beauty Salon</a>. All rights reserved. | Designed by <a href="https://jatin-miglani.github.io/Jatin-Portfolio/" style="text-decoration: none; color: rgb(16, 67, 86);">JatinMiglani</a></p>
         <div class="icons">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-youtube"></i></a>

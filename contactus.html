@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat:wght@600;800&family=Satisfy&family=Stoke:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <style>
         * {
             box-sizing: border-box;
@@ -133,6 +134,35 @@
             color: azure;
             border-radius: 25px;
         }
+        .toggle a:hover{
+            background-color: azure;
+            color: rgb(16, 67, 86);
+        }
+        .nav2{
+            float: right;
+            background-color: rgb(16, 67, 86);
+            margin: 10px;
+            right: 0;
+            position: fixed;
+            width: 3%;
+            height: 50px;
+            text-align: center;
+            padding: 10px 15px;
+            color: azure;
+            text-decoration: none;
+            font-size: 20px;
+            bottom: 2px; 
+            border-radius: 70px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .nav2 {
+                width: 100%;
+                margin: 0;
+                bottom: 0;
+                border-radius: 0;
+            }
+        }
 
         .bridal-section {
             padding: 100px;
@@ -187,7 +217,15 @@
             height: 400px;
             margin-top: 30px;
         }
-        
+        @media only screen and (max-width: 768px) {
+            .map iframe{
+                width: 200px;
+                height: 200px;
+            }
+            .footer{
+                padding-bottom: 70px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -196,10 +234,12 @@
             <a href="index.html">HOME</a>
             <a href="services.html">SERVICES</a>
             <a href="staff.html">STAFF</a>
-            <a href="contact.html">CONTACT US</a>
+            <a href="contactus.html">CONTACT US</a>
         </nav>
     </div>
-
+    <div class="toggle">
+        <a href="tel:+917986544257" class="nav2"><i class="fa fa-phone"></i></a>    
+    </div>
     <div class="contact-section">
         <h1>Contact Us</h1>
         <hr>
@@ -236,7 +276,7 @@
     </div>
 
     <div class="footer">
-        <p>&copy; 2023 <a href="home.html" style="text-decoration: none; color: rgb(16, 67, 86);">Krishna Beauty Salon</a>. All rights reserved. | Designed by JatinMiglani</p>
+        <p>&copy; 2023 <a href="home.html" style="text-decoration: none; color: rgb(16, 67, 86);">Krishna Beauty Salon</a>. All rights reserved. | Designed by <a href="https://jatin-miglani.github.io/Jatin-Portfolio/" style="text-decoration: none; color: rgb(16, 67, 86);">JatinMiglani</a></p>
         <hr>
         <br>
         <div class="icons">
